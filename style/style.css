@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Asap-Regular';
+    font-display: swap;
+    src: url(../fonts/Asap-Regular.ttf);
+}
+
+:root {
+    --cor0: #000;
+    --cor1: #fff;
+    --cor2: #;
+    --cor3: #;
+    --cor4: #;
+    --cor5: #;
+    --cor6: #;
+    --cor7: #;
+    --cor8: #;
+    --cor9: #;
+
+    --fonte-padrão: 'Arial, Verdana, Helvetica, sans-serif';
+    --fonte1: '';
+    --fonte2: '';
+    --fonte3: '';
+    --fonte4: '';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    background-color: var(--cor1) !important;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
