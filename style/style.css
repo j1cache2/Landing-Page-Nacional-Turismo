@@ -9,7 +9,7 @@
 :root {
     --cor0: #000;
     --cor1: #fff;
-    --cor2: #;
+    --cor2: #F5F5F5;
     --cor3: #;
     --cor4: #;
     --cor5: #;
@@ -37,19 +37,82 @@ a {
     color: inherit;
 }
 
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 body {
     width: 100%;
-    max-width: 1366px;
+    max-width: 1920px;
     margin: auto;
-    background-color: var(--cor1) !important;
+    background-color: var(--cor2) !important;
 }
 
 h1,
 h2,
 h3 {
     text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--cor0);
+    font-family: var(--fonte3);
+    font-size: 14px;
+    color: var(--cor1);
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+footer a:hover {
+    color: var(--cor8);
+}
+
+@media(max-width: 539px) {
+    footer {
+        font-size: 10px;
+    }
 }
