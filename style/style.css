@@ -1,16 +1,46 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Asap-Regular';
+    font-family: 'Inter-Black';
     font-display: swap;
-    src: url(../fonts/Asap-Regular.ttf);
+    src: url(../fonts/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    font-display: swap;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    font-display: swap;
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    font-display: swap;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito-MediumItalic';
+    font-display: swap;
+    src: url(../fonts/Nunito-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito-LightItalic';
+    font-display: swap;
+    src: url(../fonts/Nunito-LightItalic.ttf);
 }
 
 :root {
     --cor0: #000;
     --cor1: #fff;
     --cor2: #F5F5F5;
-    --cor3: #;
+    --cor3: #EDC55D;
     --cor4: #;
     --cor5: #;
     --cor6: #;
@@ -19,10 +49,21 @@
     --cor9: #;
 
     --fonte-padrão: 'Arial, Verdana, Helvetica, sans-serif';
-    --fonte1: '';
-    --fonte2: '';
-    --fonte3: '';
-    --fonte4: '';
+    --fonte1: 'Inter-Black';
+    --fonte2: 'Inter-Regular';
+    --fonte3: 'Inter-ExtraBold';
+    --fonte4: 'Nunito-Regular';
+    --fonte5: 'Nunito-MediumItalic';
+    --fonte6: 'Nunito-LightItalic';
+    --fonte: '';
+    --fonte: '';
+    --fonte: '';
+    --fonte: '';
+    --fonte: '';
+    --fonte: '';
+    --fonte: '';
+    --fonte: '';
+    --fonte: '';
 }
 
 * {
@@ -44,9 +85,16 @@ html {
 body {
     width: 100%;
     max-width: 1920px;
+    /* max-width: 1366px;*/
     margin: auto;
     background-color: var(--cor2) !important;
 }
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+/*Depois conferir configurações globais. Me parece que todos os H's são #000 */
 
 h1,
 h2,
@@ -54,14 +102,70 @@ h3 {
     text-transform: uppercase;
 }
 
+/*Ver esse header para telas com largura superior a 1366px.1920px por exemplo*/
 
+.header {
+    background-image: url(/images/bg1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 910px;
+}
 
+.header .container1 {
+    margin: auto;
+    padding-top: 290px;
+    width: 100%;
+    max-width: 1020px;
+    display: flex;
+}
 
+.header .container1 .container2 {
+    float: left;
+}
 
+.header .container1 .container2 h1 {
+    font-family: var(--fonte1);
+    /* font-size: 64px; */
+    font-size: 50px;
+    color: var(--cor0);
+    max-width: 100%;
+    /* width: 760px; */
+    width: 600px;
+    margin-bottom: 8px;
+}
 
+.header .container1 .container2 p {
+    font-family: var(--fonte2);
+    font-size: 18px;
+    color: var(--cor0);
+    max-width: 100%;
+    width: 670px;
+}
 
+.header .container1 .container2 p span {
+    font-family: var(--fonte3);
+}
 
+.header .container1 h3 {
+    font-family: var(--fonte6);
+    font-size: 70px;
+    color: var(--cor3);
+    line-height: 80%;
+    letter-spacing: -0.085em;
+    opacity: 0.85;
+    padding: 94px 0px 0px 45px;
+}
 
+.header p.pbottom {
+    font-family: var(--fonte4);
+    font-size: 20px;
+    color: var(--cor1);
+    text-align: center;
+    padding: 250px 0px 0px 0px;
+    text-transform: uppercase;
+}
 
 
 
