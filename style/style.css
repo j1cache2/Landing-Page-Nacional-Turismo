@@ -54,6 +54,12 @@
     src: url(../fonts/Nunito-ExtraBold.ttf);
 }
 
+@font-face {
+    font-family: 'Nunito-Bold';
+    font-display: swap;
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+
 :root {
     --cor0: #000;
     --cor1: #fff;
@@ -76,7 +82,7 @@
     --fonte7: 'JetBrainsMono-Medium';
     --fonte8: 'Inter-Medium';
     --fonte9: 'Nunito-ExtraBold';
-    --fonte: '';
+    --fonte10: 'Nunito-Bold';
     --fonte: '';
     --fonte: '';
     --fonte: '';
@@ -137,10 +143,8 @@ p {
 
 .header .container1 {
     margin: auto;
-    /* padding-top: 290px; */
     padding: 300px 10px 0px 10px;
     width: 100%;
-    /* max-width: 1020px; */
     max-width: 910px;
     display: flex;
 }
@@ -151,11 +155,9 @@ p {
 
 .header .container1 .container2 h1 {
     font-family: var(--fonte1);
-    /* font-size: 64px; */
     font-size: 44px;
     color: var(--cor0);
     max-width: 100%;
-    /* width: 760px; */
     width: 560px;
     margin-bottom: 8px;
 }
@@ -172,35 +174,6 @@ p {
     font-family: var(--fonte3);
 }
 
-/* .header .container1 .container2 p {
-
-    text-shadow: 1px 1px 2px #D9D9D9, 0 0 1em #D9D9D9, 0 0 0.2em #D9D9D9;
-    color: #D9D9D9;
-
-    position: absolute;
-    width: 612px;
-    height: 421px;
-    left: 471px;
-    top: 379px;
-    background: #D9D9D9;
-    opacity: 0.55;
-    filter: blur(77.5px);
-    z-index: 1;
-    backdrop-filter: blur(10px) saturate(70%);
-    background-color: rgba(217, 217, 217, 0.3);
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    margin: 30px;
-    font-weight: bold;
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-
-    box-shadow: 0px 0px 20px 5px darkslateblue;
-    border-radius: 25px;
-} */
-
 .header .container1 .container2 a {
     font-family: var(--fonte7);
     font-size: 16px;
@@ -215,6 +188,11 @@ p {
     max-width: 360px;
     text-align: center;
     padding: 10px 0px;
+}
+
+.header .container1 .container2 a:hover {
+    transform: translateY(-3px);
+    transition: 0.4s;
 }
 
 .header .container1 h3 {
@@ -305,35 +283,72 @@ p {
 .tourist-attractions .contact {
     width: 100%;
     max-width: 910px;
-    margin: 20px auto 0px;
-    background: linear-gradient(0deg, #F3B926 35.5%, #F6D00B 102.99%, rgba(247, 179, 8, 0) 103%);
+    height: 300px;
+    margin: 18px auto 0px;
+    background: url(/images/bg8.png), linear-gradient(0deg, #F3B926 35.5%, #F6D00B 102.99%, rgba(247, 179, 8, 0) 103%);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
 }
 
-.tourist-attractions .contact .vector1 {
-    width: 160px;
-    margin: 0px 0px 90px 0px;
+.tourist-attractions .contact p {
+    font-family: var(--fonte4);
+    font-size: 27px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--cor0);
+    width: 100%;
+    max-width: 540px;
+    margin: 0px auto 0px;
+    padding-top: 50px;
 }
 
-
-
-
-
-
-.tourist-attractions .contact .tourist1 {
-    position: relative;
-    z-index: 1;
-    margin: 0px 0px 0px -151px;
-    width: 500px;
+.tourist-attractions .contact p span {
+    font-family: var(--fonte10);
 }
 
-
-
-.tourist-attractions .contact .vector2 {
-    width: 190px;
+.tourist-attractions .contact form {
+    margin: auto;
+    text-align: center;
 }
 
+.tourist-attractions .contact form .nt-cadastro-nome,
+.tourist-attractions .contact form .nt-cadastro-email {
+    font-family: var(--fonte4);
+    font-size: 16px;
+    color: var(--cor0);
+    width: 230px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 30px 6px 0px 0px;
+    padding-left: 17px;
+    outline: none;
+    caret-color: var(--cor0);
+    box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
+}
 
+.tourist-attractions .contact form .nt-btn {
+    font-family: var(--fonte7);
+    font-size: 16px;
+    color: var(--cor0);
+    background-color: var(--cor4);
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    display: block;
+    margin: 45px auto 0px;
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.tourist-attractions .contact form .nt-btn:hover {
+    transform: translateY(-3px);
+    transition: 0.4s;
+}
 
 .tourist-attractions .image5,
 .tourist-attractions .image7 {
@@ -350,6 +365,17 @@ p {
 .tourist-attractions .image7 {
     width: 212px;
     float: right;
+}
+
+.tourist-attractions .fourp {
+    margin-top: 56px;
+}
+
+.tourist-attractions .fourp p {
+    font-family: var(--fonte2);
+    font-size: 14px;
+    color: var(--cor0);
+    margin: 18px 0px;
 }
 
 
@@ -375,11 +401,14 @@ p {
 
 footer {
     background-color: var(--cor0);
-    font-family: var(--fonte3);
-    font-size: 14px;
-    color: var(--cor1);
     height: 100%;
     padding: 5px;
+}
+
+footer p {
+    font-family: var(--fonte2);
+    font-size: 14px;
+    color: var(--cor4);
     text-align: center;
 }
 
