@@ -679,6 +679,8 @@ ul {
     color: var(--cor6);
     line-height: 100px;
     text-align: center;
+    overflow: hidden;
+    height: 170px;
 }
 
 .faq .container3 {
@@ -733,10 +735,12 @@ ul {
 
 .accordion__answer {
     display: none;
+    transition: all 10s;
 }
 
 .accordion.active .accordion__answer {
     display: block;
+    transition: all 10s;
 }
 
 .faq a {
