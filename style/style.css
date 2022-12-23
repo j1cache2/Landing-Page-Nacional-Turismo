@@ -162,7 +162,7 @@ ul {
 /*Ver esse header para telas com largura superior a 1366px.1920px por exemplo*/
 
 .header {
-    background-image: url(/images/bg1-new.webp);
+    background-image: url(../images/bg1-new.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -671,7 +671,7 @@ ul {
 }
 
 .faq {
-    background-image: url(/images/bg2.webp);
+    background-image: url(../images/bg2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
