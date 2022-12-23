@@ -36,14 +36,9 @@
             <li class="dot" id="section-five"></li>
         </ul>
     </nav>
-    <script>document.querySelectorAll('li').forEach(li => {
-            li.addEventListener('click', () => {
-                document.querySelectorAll('li').forEach(li => {
-                    li.classList.remove('active');
-                });
-                li.classList.add('active');
-            });
-        });</script>
+    <script>
+
+    </script>
     <div class="triangle"></div>
     <section class="tourist-attractions">
         <p>Somos uma equipe experiente, com fotógrafo e guias. Somos apaixonados pelo nosso trabalho e gostamos de nos
@@ -348,6 +343,15 @@
         var linkfaq = document.getElementById("linkfaq");
         document.getElementById("section-five").addEventListener("click", function () {
             linkfaq.scrollIntoView();
+        });
+        
+        document.querySelectorAll('li').forEach(li => {
+            li.addEventListener('click', () => {
+                document.querySelectorAll('li').forEach(li => {
+                    li.classList.remove('active');
+                });
+                li.classList.add('active');
+            });
         });
     </script>
     <footer>

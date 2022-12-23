@@ -259,6 +259,10 @@ ul {
     cursor: pointer;
 }
 
+/* .bullet-menu ul li#section-one {
+    background-color: var(--cor4);
+} */
+
 .bullet-menu ul li.active {
     background-color: var(--cor4);
 }
