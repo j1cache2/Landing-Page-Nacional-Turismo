@@ -338,7 +338,7 @@ ul {
     max-width: 910px;
     height: 300px;
     margin: 18px auto 0px;
-    background: url(/images/bg8.png), linear-gradient(0deg, #F3B926 35.5%, #F6D00B 102.99%, rgba(247, 179, 8, 0) 103%);
+    background: url(../images/bg8.webp), linear-gradient(0deg, #F3B926 35.5%, #F6D00B 102.99%, rgba(247, 179, 8, 0) 103%);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
