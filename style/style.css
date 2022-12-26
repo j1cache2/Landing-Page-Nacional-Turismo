@@ -719,28 +719,42 @@ ul {
     color: var(--cor0);
 }
 
+.faq .container3 ul .img-arrow {
+    position: relative;
+    float: right;
+    top: -15px;
+}
+
+/* .faq .container3 ul .img-arrow.active {
+    transform: rotate(180deg);
+    color: hsl(49, 78 , 53);
+} */
+
 .faq .container3 ul p {
     font-family: var(--fonte4);
     font-size: 15px;
     color: var(--cor0);
     margin-top: 20px;
     display: none;
-    transition-duration: 10s;
 }
 
-.faq .container3 ul p.active {
+/* .faq .container3 ul li {
     font-family: var(--fonte4);
     font-size: 15px;
     color: var(--cor0);
     margin-top: 20px;
-}
-
-.accordion__answer {
-    display: none;
-}
+    overflow: hidden;
+    height: 102px;
+    transition-duration: 1s;
+} */
 
 .accordion.active .accordion__answer {
     display: block;
+    transition: max-height 10s ease-in-out;
+}
+
+.accordion.active .img-arrow {
+    transform: rotate(180deg);
 }
 
 .faq .container3 a {
