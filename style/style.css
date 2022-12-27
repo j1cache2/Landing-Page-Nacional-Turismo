@@ -470,6 +470,7 @@ ul {
     bottom: -50px;
     background-color: rgba(217, 217, 217, 1);
     display: none;
+    z-index: 1;
 }
 
 .line:before,
@@ -750,7 +751,7 @@ ul {
 
 .accordion.active .accordion__answer {
     display: block;
-    transition: max-height 10s ease-in-out;
+    /* transition: max-height 10s ease-in-out; */
 }
 
 .accordion.active .img-arrow {

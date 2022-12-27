@@ -406,7 +406,8 @@
                 <li class="accordion">
                     <h3 class="accordion__question">O que fazer no domingo no Rio de Janeiro?</h3>
                     <img src="images/arrow.webp" alt="arrow" class="img-arrow">
-                    <p class="accordion__answer">A segurança é uma prioridade máxima para a cidade do Rio de Janeiro. O
+                    <p class="accordion__answer">A segurança é uma prioridade máxima para a cidade do Rio de
+                        Janeiro. O
                         município
                         está
                         executando
@@ -414,7 +415,8 @@
                         segurança pública. As medidas atuais incluem a restrição do acesso aos locais turísticos nos
                         feriados, após o anoitecer, e durante eventos ou manifestações. Além disso, as forças de
                         segurança são altamente treinadas para responder a situações extraordinárias que possam surgir
-                        nessas áreas-alvo.</p>
+                        nessas áreas-alvo.
+                    </p>
                 </li>
             </ul>
             <a href="#contato">Contate um guia de turismo</a>
@@ -424,14 +426,42 @@
     </section>
 
     <script type="text/javascript">
+
+        // document.querySelectorAll('li.accordion').forEach(li => {
+        //     li.addEventListener('click', () => {
+        //         document.querySelectorAll('li.accordion').forEach(li => {
+        //             li.classList.remove('active');
+        //         });
+        //         li.classList.add('active');
+        //     });
+        // });
+
+        // function myFunction() {
+        //     var element = document.getElementByClassName("accordion");
+        //     element.classList.remove("active");
+        // }
+
         document.querySelectorAll('li.accordion').forEach(li => {
+            let isActive = false;
+
             li.addEventListener('click', () => {
-                document.querySelectorAll('li.accordion').forEach(li => {
+                if (isActive) {
                     li.classList.remove('active');
-                });
-                li.classList.add('active');
+                    isActive = false;
+                } else {
+                    document.querySelectorAll('li.accordion').forEach(li => {
+                        li.classList.remove('active');
+                    });
+                    li.classList.add('active');
+                    isActive = true;
+                }
             });
         });
+
+
+
+
+
 
         var linkheader = document.getElementById("linkheader");
         document.getElementById("section-one").addEventListener("click", function () {
